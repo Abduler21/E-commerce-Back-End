@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
   })
     .then((dbProductData) => {
       if (!dbProductData) {
-        res.status(404).json({ message: "no product founr" });
+        res.status(404).json({ message: "no product found" });
         return;
       }
       res.json(dbProductData);
